@@ -52,3 +52,8 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(use-package! ob-racket
+  :after org
+  :config
+  (append '((racket .t) (scribble . t)) org-babel-load-languages))
